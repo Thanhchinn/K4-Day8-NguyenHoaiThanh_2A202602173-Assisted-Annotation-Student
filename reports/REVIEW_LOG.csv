@@ -1,0 +1,5 @@
+round,frame_id,object,action,rule_or_reason
+1,frame_0099.jpg,xe ô tô lớn đi làn giữa phía trước (rọi đèn pha sáng),added,Mô hình AI bỏ sót hoàn toàn chiếc xe lớn ở trung tâm phía dưới gần camera; người quan sát bổ sung box bao quanh thân xe theo GUIDELINE_LABEL.md (không bao gồm vệt sáng đèn pha trên mặt đường).
+1,frame_0099.jpg,xe đi làn giữa phía trước,edited,Box do AI gợi ý bị kéo dài cạnh đáy ôm cả vệt sáng đèn pha phản chiếu trên mặt đường; thu hẹp cạnh đáy ôm sát cản trước của xe theo quy tắc gán nhãn.
+1,frame_0182.jpg,box trùng lặp trên cùng một chiếc xe ở làn giữa xa,deleted,Mô hình sinh 2 box chồng lấn nhau (IoU cao) trên cùng một chiếc xe ở tọa độ (cx~0.48; cy~0.46-0.47); xóa 1 box trùng lặp theo quy tắc để tránh trùng lặp.
+1,frame_0099.jpg,xe con màu đỏ ở làn bên phải,accepted,Box AI gợi ý đã ôm khít thân xe; bao trọn gương và cụm đèn hậu; không bị dính vệt sáng nên chấp nhận giữ nguyên.
